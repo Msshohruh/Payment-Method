@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./img/background.jpg) no-repeat;
+    background-size: cover;
+    font-family: 'Outfit', 'Arial',sans-serif;
+    font-weight: bold;
+}
+.box {
+    width: 400px;
+    background-color: rgb(33, 33, 126);             
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 7px;
+}
+.header {
+    width: 100%;
+    height: 120px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: solid gray 1px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.dot {
+    color: gray;
+    font-size: 36px;
+    margin: -25px 0 10px 0;
+    letter-spacing: 5px;
+}
+.dot span{
+    color: rgb(59, 59, 59);
+}
+.payment-method {
+    height: 60px;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin-right: auto;
+    border-bottom: solid gray 1px;
+    color: gray;
+    cursor: pointer;
+}
+.payment-method p{
+    margin-left: 25px;
+}
+.payment-method:hover {
+    color: #000;
+}
+.check{
+    margin-left: auto;
+    opacity: 0;
+}
+.payment-method:hover .check{
+    opacity: 1;
+}
+.payment-method:hover img:not(.check){
+    transform: scale(1.2);
+    transition: 1s;
+}
+.button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.button:hover img{
+    transform: translateX(5px);
+    transition: all 1s;
+}   
